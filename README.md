@@ -1,6 +1,5 @@
 # CSC1004-Java-ChatRoom
-<<<<<<< HEAD
-see it in master
+this is the final
 =======
 ## File
 **ClientFrame**           
