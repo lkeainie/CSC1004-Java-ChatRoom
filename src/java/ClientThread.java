@@ -112,7 +112,7 @@ public class ClientThread extends Thread{
                     JLabel label = new JLabel("                                    " + removeUser + " leave the chat room");
                     label.setFont(new Font("微软雅黑", Font.PLAIN, 13));
                     this.clientFrame.messageJP.add(label);
-                    clientFrame.defaultListModel.removeElement("  " + removeUser);
+                    clientFrame.defaultListModel.removeElement(removeUser);
                 }
                 //间隔
                 this.clientFrame.messageJP.add(Box.createVerticalStrut(10));
@@ -165,7 +165,7 @@ public class ClientThread extends Thread{
 
     }
     public int [] changeSize(int labelWidth, int labelHeight, int width, int height) {
-        //图片压缩算法，好像有问题
+        //图片压缩算法
         int [] res = new int[2];
         int reWidth, reHeight;
         if(width/height >= labelWidth/labelHeight){
