@@ -15,6 +15,7 @@ public class Sql
     public Sql(HashMap<Socket, String> hashMap) {
         //构造方法，创建数据库dateBase.db
         try {
+            //Class.forName("org.sqlite.JDBC");
             sqLiteConfig = new SQLiteConfig();
             //设置Text最大长度限制
             sqLiteConfig.setPragma(SQLiteConfig.Pragma.LIMIT_SQL_LENGTH, "2147483647");
@@ -109,9 +110,10 @@ public class Sql
             ResultSet rs = statement.executeQuery();
             String timestr = rs.getString("DATETIME");
             //发送离线时间后的所有消息
-            sql = "SELECT * from HISTORY WHERE datetime(DATETIME) > datetime(?)";
+            //sql = "SELECT * from HISTORY WHERE datetime(DATETIME) > datetime(?)";
+            sql = "SELECT * from HISTORY";
             statement = connection.prepareStatement(sql);
-            statement.setString(1, timestr);
+            //statement.setString(1, timestr);
             resultSet = statement.executeQuery();
             while(resultSet.next()) {
                 sendMessage(resultSet.getString("TYPE"), resultSet.getString("MESSAGE"),
