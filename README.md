@@ -16,7 +16,10 @@ this is the final
 **AudioRecorderThread**   The code of voice chat
 **Sql**                   The code of SQL
 **Main**                  Everything start
+<img width="365" alt="image" src="https://github.com/lkeainie/CSC1004-Java-ChatRoom/assets/122143625/5fafb620-1f8b-4e6d-b641-adfadea370bd">
 ## Multi-Client Chat
+<img width="1059" alt="image" src="https://github.com/lkeainie/CSC1004-Java-ChatRoom/assets/122143625/4f39d996-89cd-40df-a393-2acb3d6bbce8">
+
 I use socket network programming to implement multi-user chat. 
 Before starting the chat, someone needs to start the server-side to launch the server, and then multiple users can chat within the local area network.
 The server creates a ServerSocket to continuously receive connection requests sent by users. 
@@ -33,6 +36,7 @@ Clicking on the software icon allows you to choose between the client or server 
 **The upper right corner** displays the chat room interface, which I implemented using a JPanel nested in a JScrollPanel and added JLabels and JButtons. 
 **The lower right corner** is the input message interface, where you can select the type of message and send it.
 ## Registration system
+<img width="366" alt="image" src="https://github.com/lkeainie/CSC1004-Java-ChatRoom/assets/122143625/9d318e79-197b-40e1-b68a-d2a5f3f1b33c">
 Users can choose to enter the registration page from the login page, which will hide the login interface. 
 On the registration page, users need to enter a **unique username** (cannot be the same as an existing user), 
 **password and confirm password** (which must contain at least one uppercase letter, one lowercase letter, one number, one special character, and have a length between 6-18 characters), 
