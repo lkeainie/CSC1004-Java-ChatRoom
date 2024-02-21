@@ -37,6 +37,7 @@ Clicking on the software icon allows you to choose between the client or server 
 **The lower right corner** is the input message interface, where you can select the type of message and send it.
 ## Registration system
 <img width="366" alt="image" src="https://github.com/lkeainie/CSC1004-Java-ChatRoom/assets/122143625/9d318e79-197b-40e1-b68a-d2a5f3f1b33c">
+
 Users can choose to enter the registration page from the login page, which will hide the login interface. 
 On the registration page, users need to enter a **unique username** (cannot be the same as an existing user), 
 **password and confirm password** (which must contain at least one uppercase letter, one lowercase letter, one number, one special character, and have a length between 6-18 characters), 
